@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidad - Cultural Gourmet & Spa</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+      line-height: 1.6;
+      background: #fffaf4;
+      color: #333;
+    }
+    h1, h2 { color: #8b0000; }
+    .lang-switch { text-align: right; margin-bottom: 1rem; }
+    a { color: #8b0000; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="#" onclick="setLang('es')">🇪🇸 Español</a> |
+    <a href="#" onclick="setLang('en')">🇬🇧 English</a>
+  </div>
+
+  <div id="es">
+    <h1>Política de Privacidad</h1>
+    <p>En <strong>Cultural Gourmet & Spa</strong> valoramos tu privacidad. Esta política describe cómo tratamos tus datos personales al usar nuestra aplicación.</p>
+    <h2>1. Responsable</h2>
+    <p><strong>Equipo Cultural Gourmet & Spa</strong><br>
+    Correo de contacto: <a href="mailto:culturalgourmetspa@gmail.com">culturalgourmetspa@gmail.com</a></p>
+
+    <h2>2. Datos que recopilamos</h2>
+    <p>No recopilamos información personal sensible. Solo datos técnicos necesarios para el correcto funcionamiento de la app.</p>
+
+    <h2>3. Finalidad del tratamiento</h2>
+    <p>Ofrecer experiencias gastronómicas, culturales y de bienestar de manera personalizada.</p>
+
+    <h2>4. Derechos del usuario</h2>
+    <p>Puedes solicitar acceso, rectificación o eliminación de tus datos escribiendo a nuestro correo de contacto.</p>
+
+    <h2>5. Cumplimiento</h2>
+    <p>Esta política cumple con el Reglamento General de Protección de Datos (RGPD) de la Unión Europea.</p>
+
+    <p><em>“El placer no se envía, se vive.”</em></p>
+  </div>
+
+  <div id="en" style="display:none;">
+    <h1>Privacy Policy</h1>
+    <p>At <strong>Cultural Gourmet & Spa</strong>, we value your privacy. This policy explains how we handle your personal data when you use our app.</p>
+
+    <h2>1. Controller</h2>
+    <p><strong>Cultural Gourmet & Spa Team</strong><br>
+    Contact email: <a href="mailto:culturalgourmetspa@gmail.com">culturalgourmetspa@gmail.com</a></p>
+
+    <h2>2. Data collected</h2>
+    <p>We do not collect sensitive personal information. Only technical data required for proper app operation.</p>
+
+    <h2>3. Purpose of processing</h2>
+    <p>To provide gastronomic, cultural, and wellness experiences in a personalized way.</p>
+
+    <h2>4. User rights</h2>
+    <p>You may request access, correction, or deletion of your data by contacting us via email.</p>
+
+    <h2>5. Compliance</h2>
+    <p>This policy complies with the EU General Data Protection Regulation (GDPR).</p>
+
+    <p><em>“Pleasure is not sent, it is lived.”</em></p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('es').style.display = (lang === 'es') ? 'block' : 'none';
+      document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+    }
+    const userLang = navigator.language.startsWith('en') ? 'en' : 'es';
+    setLang(userLang);
+  </script>
+</body>
+</html>
